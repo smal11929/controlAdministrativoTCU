@@ -15,10 +15,10 @@ namespace controlAdministrativo.Models
     using System.Data.Entity.Core.Objects;
     using System.Linq;
     
-    public partial class controlAdministrativoEntities2 : DbContext
+    public partial class controlAdministrativoEntities : DbContext
     {
-        public controlAdministrativoEntities2()
-            : base("name=controlAdministrativoEntities2")
+        public controlAdministrativoEntities()
+            : base("name=controlAdministrativoEntities")
         {
         }
     
