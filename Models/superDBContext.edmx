@@ -1460,7 +1460,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="controlAdministrativoEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="controlAdministrativoEntities2" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="auditoria" EntityType="Self.auditoria" />
           <EntitySet Name="ausenciasConsecutivo" EntityType="Self.ausenciasConsecutivo" />
           <EntitySet Name="boletaAusencias" EntityType="Self.boletaAusencias" />
@@ -2204,7 +2204,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="controlAdministrativoModelStoreContainer" CdmEntityContainer="controlAdministrativoEntities">
+        <EntityContainerMapping StorageEntityContainer="controlAdministrativoModelStoreContainer" CdmEntityContainer="controlAdministrativoEntities2">
           <EntitySetMapping Name="auditoria">
             <EntityTypeMapping TypeName="controlAdministrativoModel.auditoria">
               <MappingFragment StoreEntitySet="auditoria">

@@ -1,0 +1,99 @@
+﻿@model IEnumerable<controlAdministrativo.Models.boletaRetiro>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombrePadre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cedulaPadre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombreEstudiante)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.seccionEstudiante)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.retiroLecciones)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.justificarRetiro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.firma)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.recibidoPor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sello)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.consecutivo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.retiroConsecutivo.id)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombrePadre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cedulaPadre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombreEstudiante)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.seccionEstudiante)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.retiroLecciones)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.justificarRetiro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.firma)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.recibidoPor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sello)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.consecutivo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.retiroConsecutivo.id)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,66 @@
+﻿@model controlAdministrativo.Models.auditoria
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>auditoria</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.accion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.accion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tabla)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tabla)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.modificadoPor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.modificadoPor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.usuarios.cedula)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.usuarios.cedula)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.padres.cedula)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.padres.cedula)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

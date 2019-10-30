@@ -1,0 +1,123 @@
+﻿@model IEnumerable<controlAdministrativo.Models.boletaPermiso>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.departamento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nombreFuncionario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cedulaFuncionario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.permisoAusencia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.najoHorario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.permisoRetiro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.justificarAusencia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.justificarLlegadaTardia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.adjunto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.estado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sello)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.aprobadoPor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.firmadoPor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.consecutivo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.permisoConsecutivo.id)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.departamento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nombreFuncionario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cedulaFuncionario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.permisoAusencia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.najoHorario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.permisoRetiro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.justificarAusencia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.justificarLlegadaTardia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.adjunto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sello)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.aprobadoPor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.firmadoPor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.consecutivo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.permisoConsecutivo.id)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

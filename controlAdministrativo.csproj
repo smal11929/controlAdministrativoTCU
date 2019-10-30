@@ -128,7 +128,18 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\auditoriaController.cs" />
+    <Compile Include="Controllers\boletaAusenciasController.cs" />
+    <Compile Include="Controllers\boletaPermisoController.cs" />
+    <Compile Include="Controllers\boletaRetiroController.cs" />
+    <Compile Include="Controllers\departamentoController.cs" />
+    <Compile Include="Controllers\estudiantesController.cs" />
+    <Compile Include="Controllers\historialController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\institucionController.cs" />
+    <Compile Include="Controllers\padresController.cs" />
+    <Compile Include="Controllers\permisoComprobanteController.cs" />
+    <Compile Include="Controllers\usuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -289,8 +300,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Models\superDBContext.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>superDBContext.Context.cs</LastGenOutput>
       <DependentUpon>superDBContext.edmx</DependentUpon>
+      <LastGenOutput>superDBContext.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Models\superDBContext.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -328,9 +339,62 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\auditoria\Create.cshtml" />
+    <Content Include="Views\auditoria\Delete.cshtml" />
+    <Content Include="Views\auditoria\Details.cshtml" />
+    <Content Include="Views\auditoria\Edit.cshtml" />
+    <Content Include="Views\auditoria\Index.cshtml" />
+    <Content Include="Views\boletaAusencias\Create.cshtml" />
+    <Content Include="Views\boletaAusencias\Delete.cshtml" />
+    <Content Include="Views\boletaAusencias\Details.cshtml" />
+    <Content Include="Views\boletaAusencias\Edit.cshtml" />
+    <Content Include="Views\boletaAusencias\Index.cshtml" />
+    <Content Include="Views\boletaRetiro\Create.cshtml" />
+    <Content Include="Views\boletaRetiro\Delete.cshtml" />
+    <Content Include="Views\boletaRetiro\Details.cshtml" />
+    <Content Include="Views\boletaRetiro\Edit.cshtml" />
+    <Content Include="Views\boletaRetiro\Index.cshtml" />
+    <Content Include="Views\departamento\Create.cshtml" />
+    <Content Include="Views\departamento\Delete.cshtml" />
+    <Content Include="Views\departamento\Details.cshtml" />
+    <Content Include="Views\departamento\Edit.cshtml" />
+    <Content Include="Views\departamento\Index.cshtml" />
+    <Content Include="Views\estudiantes\Create.cshtml" />
+    <Content Include="Views\estudiantes\Delete.cshtml" />
+    <Content Include="Views\estudiantes\Details.cshtml" />
+    <Content Include="Views\estudiantes\Edit.cshtml" />
+    <Content Include="Views\estudiantes\Index.cshtml" />
+    <Content Include="Views\historial\Create.cshtml" />
+    <Content Include="Views\historial\Delete.cshtml" />
+    <Content Include="Views\historial\Details.cshtml" />
+    <Content Include="Views\historial\Edit.cshtml" />
+    <Content Include="Views\historial\Index.cshtml" />
+    <Content Include="Views\institucion\Create.cshtml" />
+    <Content Include="Views\institucion\Delete.cshtml" />
+    <Content Include="Views\institucion\Details.cshtml" />
+    <Content Include="Views\institucion\Edit.cshtml" />
+    <Content Include="Views\institucion\Index.cshtml" />
+    <Content Include="Views\padres\Create.cshtml" />
+    <Content Include="Views\padres\Delete.cshtml" />
+    <Content Include="Views\padres\Details.cshtml" />
+    <Content Include="Views\padres\Edit.cshtml" />
+    <Content Include="Views\padres\Index.cshtml" />
+    <Content Include="Views\permisoComprobante\Create.cshtml" />
+    <Content Include="Views\permisoComprobante\Delete.cshtml" />
+    <Content Include="Views\permisoComprobante\Details.cshtml" />
+    <Content Include="Views\permisoComprobante\Edit.cshtml" />
+    <Content Include="Views\permisoComprobante\Index.cshtml" />
+    <Content Include="Views\usuario\Create.cshtml" />
+    <Content Include="Views\usuario\Delete.cshtml" />
+    <Content Include="Views\usuario\Details.cshtml" />
+    <Content Include="Views\usuario\Edit.cshtml" />
+    <Content Include="Views\usuario\Index.cshtml" />
+    <Content Include="Views\boletaPermiso\Create.cshtml" />
+    <Content Include="Views\boletaPermiso\Delete.cshtml" />
+    <Content Include="Views\boletaPermiso\Details.cshtml" />
+    <Content Include="Views\boletaPermiso\Edit.cshtml" />
+    <Content Include="Views\boletaPermiso\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

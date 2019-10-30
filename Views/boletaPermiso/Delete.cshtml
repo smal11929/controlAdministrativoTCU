@@ -1,0 +1,152 @@
+﻿@model controlAdministrativo.Models.boletaPermiso
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>boletaPermiso</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.departamento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.departamento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreFuncionario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreFuncionario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cedulaFuncionario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cedulaFuncionario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.permisoAusencia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.permisoAusencia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.najoHorario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.najoHorario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.permisoRetiro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.permisoRetiro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.justificarAusencia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.justificarAusencia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.justificarLlegadaTardia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.justificarLlegadaTardia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.adjunto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.adjunto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.estado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sello)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sello)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.aprobadoPor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.aprobadoPor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.firmadoPor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.firmadoPor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.consecutivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.consecutivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.permisoConsecutivo.id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.permisoConsecutivo.id)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

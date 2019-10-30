@@ -1,0 +1,114 @@
+﻿@model controlAdministrativo.Models.boletaAusencias
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>boletaAusencias</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fecha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nombrePadre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombrePadre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cedulaPadre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cedulaPadre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreEstudiante)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreEstudiante)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.seccionEstudiante)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.seccionEstudiante)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.justificarAusencias)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.justificarAusencias)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.razonAusencia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.razonAusencia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.firma)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.firma)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.recibidoPor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.recibidoPor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sello)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sello)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.consecutivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.consecutivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ausenciasConsecutivo.id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ausenciasConsecutivo.id)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
