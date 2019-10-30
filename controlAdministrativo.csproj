@@ -45,10 +45,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -124,6 +132,150 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\auditoria.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ausenciasConsecutivo.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\boletaAusencias.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\boletaPermiso.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\boletaRetiro.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\canton.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\codigoActivacion.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\consultarAuditoria_Result.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\consultarAusenciasConsecutivo_Result.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\consultarBoletaAusencias_Result.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\consultarBoletaPermiso_Result.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\consultarBoletaRetiro_Result.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\consultarCanton_Result.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\consultarCodigoActivacion_Result.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\consultarDepartamento_Result.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\consultarDistrito_Result.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\consultarEstudiantes_Result.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\consultarHistorial_Result.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\consultarInstitucion_Result.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\consultarPadres_Result.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\consultarPermisoComprobante_Result.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\consultarPermisoConsecutivo_Result.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\consultarPermisoEstado_Result.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\consultarProvincia_Result.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\consultarRetiroConsecutivo_Result.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\consultarTerminosCondiciones_Result.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\consultarUsuarios_Result.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\departamento.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\distrito.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\estudiantes.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\historial.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\institucion.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\padres.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\permisoComprobante.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\permisoConsecutivo.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\permisoEstado.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\provincia.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\retiroConsecutivo.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sp_helpdiagrams_Result.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\superDBContext.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>superDBContext.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\superDBContext.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\superDBContext.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>superDBContext.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagrams.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\terminosCondiciones.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\usuarios.cs">
+      <DependentUpon>superDBContext.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -135,8 +287,25 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\superDBContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>superDBContext.Context.cs</LastGenOutput>
+      <DependentUpon>superDBContext.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\superDBContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>superDBContext.edmx</DependentUpon>
+      <LastGenOutput>superDBContext.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <EntityDeploy Include="Models\superDBContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>superDBContext.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\superDBContext.edmx.diagram">
+      <DependentUpon>superDBContext.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -166,8 +335,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="BLL\" />
-    <Folder Include="DAL\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -181,6 +348,9 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

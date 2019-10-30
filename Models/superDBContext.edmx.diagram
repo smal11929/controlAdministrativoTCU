@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c2c58465009f40009003aeb56cf3b03d" Name="Diagram1">
+        <EntityTypeShape EntityType="controlAdministrativoModel.auditoria" Width="1.5" PointX="7.5" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlAdministrativoModel.ausenciasConsecutivo" Width="1.5" PointX="12.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlAdministrativoModel.boletaAusencias" Width="1.5" PointX="15" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlAdministrativoModel.boletaPermiso" Width="1.5" PointX="10" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlAdministrativoModel.boletaRetiro" Width="1.5" PointX="3" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlAdministrativoModel.canton" Width="1.5" PointX="10" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlAdministrativoModel.codigoActivacion" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlAdministrativoModel.departamento" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlAdministrativoModel.distrito" Width="1.5" PointX="12.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlAdministrativoModel.estudiantes" Width="1.5" PointX="5.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlAdministrativoModel.historial" Width="1.5" PointX="10.5" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlAdministrativoModel.institucion" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlAdministrativoModel.padres" Width="1.5" PointX="5.25" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlAdministrativoModel.permisoComprobante" Width="1.5" PointX="12.25" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlAdministrativoModel.permisoConsecutivo" Width="1.5" PointX="7.75" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlAdministrativoModel.permisoEstado" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlAdministrativoModel.provincia" Width="1.5" PointX="7.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlAdministrativoModel.retiroConsecutivo" Width="1.5" PointX="0.75" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlAdministrativoModel.sysdiagrams" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlAdministrativoModel.terminosCondiciones" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="controlAdministrativoModel.usuarios" Width="1.5" PointX="5.25" PointY="7.25" IsExpanded="true" />
+        <AssociationConnector Association="controlAdministrativoModel.FK_IDAuditoria" ManuallyRouted="false" />
+        <AssociationConnector Association="controlAdministrativoModel.FK_IDAuditoriaPadres" ManuallyRouted="false" />
+        <AssociationConnector Association="controlAdministrativoModel.FK_IDBAusencias" ManuallyRouted="false" />
+        <AssociationConnector Association="controlAdministrativoModel.FK_IDBPermiso" ManuallyRouted="false" />
+        <AssociationConnector Association="controlAdministrativoModel.FK_IDPComprobante" ManuallyRouted="false" />
+        <AssociationConnector Association="controlAdministrativoModel.FK_IDBRetiro" ManuallyRouted="false" />
+        <AssociationConnector Association="controlAdministrativoModel.FK_Canton" ManuallyRouted="false" />
+        <AssociationConnector Association="controlAdministrativoModel.FK_Distrito" ManuallyRouted="false" />
+        <AssociationConnector Association="controlAdministrativoModel.FK_IDInstitucion" ManuallyRouted="false" />
+        <AssociationConnector Association="controlAdministrativoModel.FK_IDHistorial" ManuallyRouted="false" />
+        <AssociationConnector Association="controlAdministrativoModel.FK_IDHistorialPadres" ManuallyRouted="false" />
+        <AssociationConnector Association="controlAdministrativoModel.FK_IDInstitucionTC" ManuallyRouted="false" />
+        <AssociationConnector Association="controlAdministrativoModel.FK_IDPadres" ManuallyRouted="false" />
+        <AssociationConnector Association="controlAdministrativoModel.FK_IDUsuarios" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
